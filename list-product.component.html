@@ -1,0 +1,15 @@
+<button  (click)="show()"> SHOW/HIDE</button>
+<div *ngIf = "flag">
+    <div *ngFor = "let p of products" class="card">
+        <img src="assets/{{p.imageUrl }}"/>
+        <div class="container">
+      
+        Name : {{p.name}}<br/>
+        Price : {{p.price}} <br/>
+        Quantity : {{p.quantity}} <br/>
+        Quality : {{p.quality}} <br/>
+        </div>
+    </div>
+</div>
+
+
